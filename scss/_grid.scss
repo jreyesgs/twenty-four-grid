@@ -27,3 +27,42 @@ $widthColum: 100 / $gridColums;
   padding-right: 15px;
   padding-left: 15px;
 }
+
+@media (min-width: 576px){
+  @for $i from 1 through $gridColums {
+    .col-sm-#{$i} { 
+      float: left; 
+      width: $widthColum * $i * 1%; 
+      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    }
+  }
+
+}
+@media (min-width: 768px){
+  @for $i from 1 through $gridColums {
+    .col-md-#{$i} { 
+      float: left; 
+      width: $widthColum * $i * 1%; 
+      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    }
+  }
+
+}
+@media (min-width: 992px){
+  @for $i from 1 through $gridColums {
+    .col-lg-#{$i} { 
+      float: left; 
+      width: $widthColum * $i * 1%; 
+      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    }
+  }
+}
+@media (min-width: 1200px){
+  @for $i from 1 through $gridColums {
+    .col-xl-#{$i} { 
+      float: left; 
+      width: $widthColum * $i * 1%; 
+      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    }
+  }
+}
