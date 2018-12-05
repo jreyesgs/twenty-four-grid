@@ -1,0 +1,39 @@
+.hidden{
+  display: none;
+}
+
+@media (min-width: 576px){
+  .sm-hidden{
+    display: none;
+  }
+  .sm-display-i{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px){
+  .md-hidden{
+    display: none;
+  }
+  .md-display-i{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px){
+  .lg-hidden{
+    display: none;
+  }
+  .lg-display-i{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px){
+  .xl-hidden{
+    display: none;
+  }
+  .xl-display-i{
+    display: inline-block;
+  }
+}
