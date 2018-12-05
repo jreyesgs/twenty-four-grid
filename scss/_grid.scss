@@ -29,6 +29,9 @@ $widthColum: 100 / $gridColums;
 }
 
 @media (min-width: 576px){
+  .col-xs-0 {
+    display: none;
+  }
   @for $i from 1 through $gridColums {
     .col-sm-#{$i} { 
       float: left; 
@@ -39,6 +42,9 @@ $widthColum: 100 / $gridColums;
 }
 
 @media (min-width: 768px){
+  .col-md-0 {
+    display: none;
+  }
   @for $i from 1 through $gridColums {
     .col-md-#{$i} { 
       float: left; 
@@ -49,6 +55,9 @@ $widthColum: 100 / $gridColums;
 }
 
 @media (min-width: 992px){
+  .col-lg-0 {
+    display: none;
+  }
   @for $i from 1 through $gridColums {
     .col-lg-#{$i} { 
       float: left; 
@@ -59,6 +68,9 @@ $widthColum: 100 / $gridColums;
 }
 
 @media (min-width: 1200px){
+  .col-xl-0 {
+    display: none;
+  }
   @for $i from 1 through $gridColums {
     .col-xl-#{$i} { 
       float: left; 

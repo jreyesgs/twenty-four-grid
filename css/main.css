@@ -169,6 +169,9 @@
 }
 
 @media (min-width: 576px) {
+  .col-xs-0 {
+    display: none;
+  }
   .col-sm-1 {
     float: left;
     width: 4.16667%;
@@ -292,6 +295,9 @@
 }
 
 @media (min-width: 768px) {
+  .col-md-0 {
+    display: none;
+  }
   .col-md-1 {
     float: left;
     width: 4.16667%;
@@ -415,6 +421,9 @@
 }
 
 @media (min-width: 992px) {
+  .col-lg-0 {
+    display: none;
+  }
   .col-lg-1 {
     float: left;
     width: 4.16667%;
@@ -538,6 +547,9 @@
 }
 
 @media (min-width: 1200px) {
+  .col-xl-0 {
+    display: none;
+  }
   .col-xl-1 {
     float: left;
     width: 4.16667%;
