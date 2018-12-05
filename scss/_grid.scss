@@ -1,0 +1,29 @@
+
+.row{
+  position: relative;
+  @if ($debug = true) { border: 1px dashed rgb(149, 150, 151);  margin-bottom: 5px; padding: 5px;}
+  width: 100%;
+}
+$gridColums: 20;
+.row::before, .row::after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+$widthColum: 100 / $gridColums;
+
+@for $i from 1 through $gridColums {
+  .col-xs-#{$i} { 
+    float: left; 
+    width: $widthColum * $i * 1%; 
+    @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+  }
+}
+
+[class*="col-md"]{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
