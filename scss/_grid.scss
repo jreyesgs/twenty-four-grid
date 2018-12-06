@@ -1,81 +1,95 @@
-
-.row{
+.row {
   position: relative;
-  @if ($debug = true) { border: 1px dashed rgb(149, 150, 151);  margin-bottom: 5px; padding: 5px;}
+  @if ($debug=true) {
+    border: 1px dashed rgb(149, 150, 151);
+    margin-bottom: 5px;
+    padding: 5px;
+  }
   width: 100%;
 }
+
 $gridColums: 24;
-.row::before, .row::after{
+.row::before,
+.row::after {
   content: " ";
   display: table;
   clear: both;
 }
 
 $widthColum: 100 / $gridColums;
-
 @for $i from 1 through $gridColums {
-  .col-xs-#{$i} { 
-    float: left; 
-    width: $widthColum * $i * 1%; 
-    @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+  .col-xs-#{$i} {
+    float: left;
+    width: $widthColum * $i * 1%;
+    @if ($debug=true) {
+      border: 1px dashed rgb(149, 150, 151);
+    }
   }
 }
 
-[class*="col-"]{
+[class*="col-"] {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .col-xs-0 {
     display: none;
   }
   @for $i from 1 through $gridColums {
-    .col-sm-#{$i} { 
-      float: left; 
-      width: $widthColum * $i * 1%; 
-      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    .col-sm-#{$i} {
+      float: left;
+      width: columns($i, $widthColum);
+      @if ($debug=true) {
+        border: 1px dashed rgb(149, 150, 151);
+      }
     }
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .col-md-0 {
     display: none;
   }
   @for $i from 1 through $gridColums {
-    .col-md-#{$i} { 
-      float: left; 
-      width: $widthColum * $i * 1%; 
-      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    .col-md-#{$i} {
+      float: left;
+      width: columns($i, $widthColum);
+      @if ($debug=true) {
+        border: 1px dashed rgb(149, 150, 151);
+      }
     }
   }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .col-lg-0 {
     display: none;
   }
   @for $i from 1 through $gridColums {
-    .col-lg-#{$i} { 
-      float: left; 
-      width: $widthColum * $i * 1%; 
-      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    .col-lg-#{$i} {
+      float: left;
+      width: columns($i, $widthColum);
+      @if ($debug=true) {
+        border: 1px dashed rgb(149, 150, 151);
+      }
     }
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .col-xl-0 {
     display: none;
   }
   @for $i from 1 through $gridColums {
-    .col-xl-#{$i} { 
-      float: left; 
-      width: $widthColum * $i * 1%; 
-      @if ($debug = true) { border: 1px dashed rgb(149, 150, 151); }
+    .col-xl-#{$i} {
+      float: left;
+      width: columns($i, $widthColum);
+      @if ($debug=true) {
+        border: 1px dashed rgb(149, 150, 151);
+      }
     }
   }
 }

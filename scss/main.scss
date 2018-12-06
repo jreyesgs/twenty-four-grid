@@ -1,8 +1,8 @@
-
-*{
+* {
   box-sizing: border-box;
 }
-$debug: true;
 
+$debug: true;
+@import "functions";
 @import "grid";
 @import "helpers";
