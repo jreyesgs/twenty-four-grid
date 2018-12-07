@@ -1,8 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-
+/* 
+  Si está en true muestras border y colores que sirven para 
+  depurar el grid
+*/
 $debug: true;
+
+@import "default";
 @import "functions";
 @import "grid";
 @import "helpers";
